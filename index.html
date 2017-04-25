@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>Wikipedia Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta content="Strona zbudowana na potrzeby kursu freeCodeCamp. Pozwala przeszukiwać bazę Wikipedii oraz wyświetlać losowe artykuły." name="description">
+    <meta name="keywords" content="Wikipedia, viewer, project, API">
+    <meta name="author" content="Sebastian Urbański">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://usrz.github.io/bootstrap-languages/languages.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div id="container-fluid">
+        <main>
+            <h1>Wyszukiwarka artykułów na Wikipedii!</h1>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="search">Wyszukaj informację na temat</label>
+                    <input name="search" type="search" placeholder="Wpisz szukaną frazę" class="form-control" required id="search">
+                </div>
+                <div id="buttons-group">
+                    <div>
+                        <button id="question" type="submit" class="btn-search btn btn-primary">Szukaj</button>
+                    </div>
+                    <div id="button-random">
+                        <a role="button" class="btn btn-primary" href="https://pl.wikipedia.org/wiki/Special:Random" target="_blank">Pokaż losowy!</a>
+                    </div>
+                    <div>
+                        <button id="polish" type="button" class="btn btn-default">
+                            <span class="lang-sm" lang="pl"></span>
+                        </button>
+                        <button id="english" type="button" class="btn btn-default">
+                            <span class="lang-sm" lang="en"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <ul class="list-unstyled">
+            </ul>
+        </main>
+        <footer>
+            <div>
+                <p id="author">Autor <a href="https://seb.wf">Sebastian Urbański</a></p>
+                <p>API <a href="https://wikipedia.org">wikipedia.org</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
