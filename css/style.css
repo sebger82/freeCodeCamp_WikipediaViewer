@@ -4,7 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
-#container-fluid {
+.container-fluid {
     display: flex;
     flex-direction: column;
     align-items: center;
